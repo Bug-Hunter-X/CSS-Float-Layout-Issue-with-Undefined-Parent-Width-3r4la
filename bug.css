@@ -1,0 +1,10 @@
+The following CSS code causes unexpected behavior in certain browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This code intends to create two divs that each take up 50% of their parent's width and sit side-by-side. However, if the parent element doesn't have a defined width, the divs may not render correctly. This is because the percentage width is relative to the parent's width, and without a defined width on the parent, the divs might collapse or not render as intended.
