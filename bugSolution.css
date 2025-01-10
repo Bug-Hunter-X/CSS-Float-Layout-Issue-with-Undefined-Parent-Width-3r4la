@@ -1,0 +1,13 @@
+To solve this, explicitly set the width of the parent container:
+
+```css
+.parent {
+  width: 100%; /* or a specific width */
+}
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+By adding `width: 100%;` (or a specific width) to the parent element, the percentage widths of the child divs will be calculated correctly, and the layout should render as intended.  This fix ensures the percentage widths are relative to a known value.
